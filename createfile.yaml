@@ -8,5 +8,5 @@
         mode: 0777
         owner: ec2-user
         state: touch
----
+...
 
