@@ -1,5 +1,6 @@
 ---
 - hosts: all
+  become: true
   tasks:
     - name: installing http server
       yum:
@@ -8,8 +9,10 @@
 
     - name: start the apache httpd server
       service:
+        name: httpd
         state: started
         enabled: true
----
+...
+
 
 
