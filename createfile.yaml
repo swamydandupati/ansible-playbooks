@@ -1,0 +1,11 @@
+---
+- hosts: all
+  tasks:
+    - name: create a file
+      file:
+        path: /home/ec2-user/king.txt
+        mode: 0777
+        owner: ec2-user
+        state: touch
+---
+
